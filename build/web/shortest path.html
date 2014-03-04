@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+
+<head>
+<title>Shortest path</title>
+
+<script src="jquery.min.js"></script>
+</head>
+
+<body>
+
+<p>Modes:
+<input type="radio" name="input" id="Add Vertices" value="Add Vertices"><b>Add Vertices</b>
+<input type="radio" name="input" id="Add Edges" value="Add Edges"><b>Add Edges</b>
+<input type="radio" name="input" id="Move Vertices" value="Move Vertices" ><b>Move vertices</b>
+<input type="radio" name="input" id="Delete Vertices" value="Delete Vertices" ><b>Delete Vertices</b>
+<input type="radio" name="input" id="Delete Edges" value="Delete Edges" ><b>Delete Edges</b>
+<input type="radio" name="input" id="Find Shortest Path" value="Find Shortest Path"><b>Find Shortest Path</b>
+
+</p>
+<canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+<script src="shortest.js"></script>
+ <div id="column1" style="float:right; margin-right:150px; margin-top:150px;">
+     <fieldset>
+         <legend>Save ur work!!!</legend>
+      <form name="input" >
+       Save Graph: <input type="text" name="filename">
+       <input type="button" value="Save Graph" onclick='savefile();' >
+      </form>
+        <br> 
+      <form name="output">
+       Saved Graphs:
+       <select name="saved graph" id="select"></select>
+       <input type="button" value="Retrieve Graph" onclick='loadfile();'>
+       <br>
+       <br>
+       
+      </form>
+     </fieldset>
+    </div>
+</body>
+</html>

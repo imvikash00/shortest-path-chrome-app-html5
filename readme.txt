@@ -1,0 +1,1 @@
+Html5 app that allows user to create graph using node and edges and then make them select two vertices and find the sortest path between them. Finding of shortest path occurs on the server side using dijikstra algo implemented in jsp
